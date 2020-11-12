@@ -1,7 +1,8 @@
 # Template for java webproject
 
-This is the starter template for De-Resterende's project structure.
+This is the starter template for De-Resterende's web project structure.
 It's based on a command pattern created by one of our teachers Kasper.
+We primarily use bootstrap for our .jsp sites, but you can you whatever you want.
 
 # Download
 
