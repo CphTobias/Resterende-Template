@@ -1,5 +1,6 @@
 package api.facades;
 
+import infrastructure.DBSetup.Database;
 import infrastructure.database.DBTemplate;
 
 public class TemplateFacade {
@@ -12,8 +13,9 @@ public class TemplateFacade {
     }
 
     public static TemplateFacade getInstance(){
+        Database db = new Database();
         if(instance == null){
-            instance = new TemplateFacade(new DBTemplate());
+            instance = new TemplateFacade(new DBTemplate(db));
         }
         return instance;
     }
