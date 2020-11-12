@@ -5,7 +5,7 @@ import exceptions.WebException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class Redirect extends Command {
+public class Redirect extends ICommand {
     @Override
     String execute(HttpServletRequest request, HttpServletResponse response) throws WebException {
 

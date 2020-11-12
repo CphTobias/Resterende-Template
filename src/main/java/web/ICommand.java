@@ -9,16 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 
-abstract class Command {
+abstract class ICommand {
 
-    private static HashMap<String, Command> commands;
+    private static HashMap<String, ICommand> commands;
 
     private static void initCommands() {
         commands = new HashMap<>();
         commands.put("redirect", new Redirect());
     }
 
-    static Command from( HttpServletRequest request ) {
+    static ICommand from(HttpServletRequest request ) {
         String targetName = request.getParameter( "target" );
         if ( commands == null ) {
             initCommands();
