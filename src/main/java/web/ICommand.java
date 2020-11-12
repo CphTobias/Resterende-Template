@@ -4,12 +4,14 @@ package web;
 import api.Template;
 import api.facades.TemplateFacade;
 import exceptions.WebException;
+import web.commands.Redirect;
+import web.commands.UnknownCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 
-abstract class ICommand {
+public abstract class ICommand {
 
     private static HashMap<String, ICommand> commands;
 
@@ -36,7 +38,7 @@ abstract class ICommand {
         return new Template(TemplateFacade.getInstance());
     }
 
-    abstract String execute( HttpServletRequest request, HttpServletResponse response )
+    protected abstract String execute(HttpServletRequest request, HttpServletResponse response)
             throws WebException;
 
 }

@@ -1,13 +1,14 @@
-package web;
+package web.commands;
 
 import exceptions.WebException;
+import web.ICommand;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class Redirect extends ICommand {
     @Override
-    String execute(HttpServletRequest request, HttpServletResponse response) throws WebException {
+    protected String execute(HttpServletRequest request, HttpServletResponse response) throws WebException {
 
         String destination = request.getParameter("destination");
 
