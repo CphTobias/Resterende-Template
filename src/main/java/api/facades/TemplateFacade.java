@@ -1,6 +1,6 @@
 package api.facades;
 
-import infrastructure.DBSetup.Database;
+import infrastructure.dbsetup.Database;
 import infrastructure.database.DBTemplate;
 
 public class TemplateFacade {

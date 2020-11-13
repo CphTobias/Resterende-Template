@@ -38,7 +38,6 @@ public abstract class ICommand {
         return new Template(TemplateFacade.getInstance());
     }
 
-    protected abstract String execute(HttpServletRequest request, HttpServletResponse response)
-            throws WebException;
+    protected abstract String execute(HttpServletRequest request, HttpServletResponse response);
 
 }

@@ -1,6 +1,6 @@
 package infrastructure.database;
 
-import infrastructure.DBSetup.Database;
+import infrastructure.dbsetup.Database;
 
 public class DBTemplate {
     private final Database db;
