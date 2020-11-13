@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 @WebServlet( name = "Main", urlPatterns = { "/Main" } )
 public class Invoker extends HttpServlet {
 
+    //This is the invoker of the ICommand, it calls the ICommand to execute a command and then forwards to the receiver
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {

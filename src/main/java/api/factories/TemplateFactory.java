@@ -2,6 +2,10 @@ package api.factories;
 
 public class TemplateFactory {
 
+    /**
+     * This is used for validation when creating something
+     */
+
     private String example;
 
     public Boolean isValid() {

@@ -9,6 +9,12 @@ import infrastructure.dbsetup.Database;
 import java.util.List;
 
 public class DBTemplateRepository implements TemplateRepository {
+
+    /**
+     * Implements an interface it choosing.
+     * In here you can call the database.
+     */
+
     private final Database db;
 
     public DBTemplateRepository(Database db) {

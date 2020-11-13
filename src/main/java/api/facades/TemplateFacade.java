@@ -11,6 +11,10 @@ import java.util.List;
 
 public class TemplateFacade {
 
+    /**
+     * We use a facade pattern inside our api because it splits up the code so we get a better overview of the methods.
+     */
+
     private static TemplateFacade instance;
     private final TemplateRepository repo;
 

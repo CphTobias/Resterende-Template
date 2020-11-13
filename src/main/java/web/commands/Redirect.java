@@ -9,6 +9,11 @@ public class Redirect extends ICommand {
     @Override
     protected String execute(HttpServletRequest request, HttpServletResponse response) {
 
+        /**
+         * Used as a getter to redirect to certain places on the website
+         * You can either just redirect or maybe select from the database.
+         */
+
         String destination = request.getParameter("destination");
 
         switch (destination){

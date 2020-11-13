@@ -4,6 +4,14 @@ import java.sql.*;
 
 public class Database {
 
+    /**
+     * The setup of your database, you will need to create a database using any platform of your choosing
+     * Then you can implement it in the url
+     * Create a user with your name then implement that aswell.
+     *
+     * If you want to use migrate you can read more about that in the README.md
+     */
+
     private final String URL;
     private final String USER;
 
