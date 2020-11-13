@@ -1,7 +1,6 @@
 package infrastructure.DBSetup;
 
 import org.apache.ibatis.jdbc.ScriptRunner;
-
 import java.io.*;
 import java.sql.Connection;
 import java.sql.SQLException;
