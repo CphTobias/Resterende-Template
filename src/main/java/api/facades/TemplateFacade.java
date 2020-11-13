@@ -25,7 +25,7 @@ public class TemplateFacade {
         return instance;
     }
 
-    public TemplateFactory create(){
+    public Template create(TemplateFactory factory){
         return null;
     }
 

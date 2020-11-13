@@ -26,7 +26,7 @@ public class DBTemplate implements TemplateRepository {
     }
 
     @Override
-    public TemplateFactory create() {
+    public Template create(TemplateFactory factory) {
         return null;
     }
 }

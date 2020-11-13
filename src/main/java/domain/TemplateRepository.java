@@ -10,5 +10,5 @@ public interface TemplateRepository {
 
     Template find(int id) throws NoSuchTemplateExists;
 
-    TemplateFactory create();
+    Template create(TemplateFactory factory);
 }
