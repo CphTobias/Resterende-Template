@@ -4,7 +4,7 @@ public class TemplateFactory {
 
     private String example;
 
-    public Boolean isValid(){
+    public Boolean isValid() {
         if (this.example == null || this.example.equals("")) return false;
         return true;
     }

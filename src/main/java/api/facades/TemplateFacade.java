@@ -5,7 +5,7 @@ import domain.Template;
 import domain.TemplateRepository;
 import exceptions.NoSuchTemplateExists;
 import infrastructure.dbsetup.Database;
-import infrastructure.database.DBTemplate;
+import infrastructure.database.DBTemplateRepository;
 
 import java.util.List;
 
@@ -18,15 +18,15 @@ public class TemplateFacade {
         this.repo = repo;
     }
 
-    public static TemplateFacade getInstance(){
-        TemplateRepository templateRepository = new DBTemplate(new Database());
-        if(instance == null){
+    public static TemplateFacade getInstance() {
+        TemplateRepository templateRepository = new DBTemplateRepository(new Database());
+        if (instance == null) {
             instance = new TemplateFacade(templateRepository);
         }
         return instance;
     }
 
-    public Template create(TemplateFactory factory){
+    public Template create(TemplateFactory factory) {
         return null;
     }
 
@@ -34,7 +34,7 @@ public class TemplateFacade {
         return null;
     }
 
-    public List<Template> findAll(){
+    public List<Template> findAll() {
         return null;
     }
 

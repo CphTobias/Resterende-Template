@@ -8,10 +8,10 @@ import infrastructure.dbsetup.Database;
 
 import java.util.List;
 
-public class DBTemplate implements TemplateRepository {
+public class DBTemplateRepository implements TemplateRepository {
     private final Database db;
 
-    public DBTemplate(Database db) {
+    public DBTemplateRepository(Database db) {
         this.db = db;
     }
 
@@ -21,7 +21,7 @@ public class DBTemplate implements TemplateRepository {
     }
 
     @Override
-    public Template find(int id) throws NoSuchTemplateExists {
+    public Template findById(int id) throws NoSuchTemplateExists {
         return null;
     }
 

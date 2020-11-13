@@ -13,7 +13,8 @@
 <jsp:include page="includes/navbar.jsp" flush="true"/>
 
 <main role="main" class="container flex-shrink-0">
-    <h1>Error:</h1>
+    <!-- Called if an error happens in the system -->
+    <h1>Error</h1>
     <c:if test="${requestScope.error}">
         <h4>${requestScope.error}</h4>
     </c:if>
