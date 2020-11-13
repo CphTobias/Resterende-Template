@@ -1,9 +1,10 @@
 
 package web;
 
-import api.Template;
+import api.*;
+
 import api.facades.TemplateFacade;
-import exceptions.WebException;
+import exceptions.*;
 import web.commands.Redirect;
 import web.commands.UnknownCommand;
 

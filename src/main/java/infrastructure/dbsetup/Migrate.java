@@ -1,4 +1,4 @@
-package infrastructure.DBSetup;
+package infrastructure.dbsetup;
 
 import org.apache.ibatis.jdbc.ScriptRunner;
 

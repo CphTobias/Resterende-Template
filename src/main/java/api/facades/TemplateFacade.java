@@ -1,22 +1,40 @@
 package api.facades;
 
-import infrastructure.DBSetup.Database;
+import api.factories.TemplateFactory;
+import domain.Template;
+import domain.TemplateRepository;
+import infrastructure.dbsetup.Database;
 import infrastructure.database.DBTemplate;
+
+import java.util.List;
 
 public class TemplateFacade {
 
     private static TemplateFacade instance;
-    private final DBTemplate dbTemplate;
+    private final TemplateRepository repo;
 
-    public TemplateFacade(DBTemplate dbTemplate) {
-        this.dbTemplate = dbTemplate;
+    public TemplateFacade(TemplateRepository repo) {
+        this.repo = repo;
     }
 
     public static TemplateFacade getInstance(){
-        Database db = new Database();
+        TemplateRepository templateRepository = new DBTemplate(new Database());
         if(instance == null){
-            instance = new TemplateFacade(new DBTemplate(db));
+            instance = new TemplateFacade(templateRepository);
         }
         return instance;
     }
+
+    public TemplateFactory create(){
+        return null;
+    }
+
+    public Template find(int id){
+        return null;
+    }
+
+    public List<Template> findAll(){
+        return null;
+    }
+
 }

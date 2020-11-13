@@ -1,8 +1,5 @@
-package infrastructure.DBSetup;
+package infrastructure.dbsetup;
 
-import org.apache.ibatis.jdbc.ScriptRunner;
-
-import java.io.*;
 import java.sql.*;
 
 public class Database {
