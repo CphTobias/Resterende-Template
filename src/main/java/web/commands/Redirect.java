@@ -1,6 +1,5 @@
 package web.commands;
 
-import exceptions.WebException;
 import web.ICommand;
 
 import javax.servlet.http.HttpServletRequest;
