@@ -3,6 +3,7 @@ package api.facades;
 import api.factories.TemplateFactory;
 import domain.Template;
 import domain.TemplateRepository;
+import exceptions.NoSuchTemplateExists;
 import infrastructure.dbsetup.Database;
 import infrastructure.database.DBTemplate;
 
@@ -29,7 +30,7 @@ public class TemplateFacade {
         return null;
     }
 
-    public Template find(int id){
+    public Template find(int id) throws NoSuchTemplateExists {
         return null;
     }
 
