@@ -28,22 +28,28 @@ public class Invoker extends HttpServlet {
             } else {
                 request.getRequestDispatcher("/WEB-INF/" + view + ".jsp").forward(request, response);
             }
-        } catch ( UnsupportedEncodingException | WebException ex ) {
+        } catch ( UnsupportedEncodingException ex ) {
             request.setAttribute( "error", ex.getMessage() );
             request.getRequestDispatcher( "/WEB-INF/errorpage.jsp" ).forward( request, response );
         }
     }
 
     @Override
-    protected void doGet( HttpServletRequest request, HttpServletResponse response )
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doGet( HttpServletRequest request, HttpServletResponse response ) {
+        try {
+            processRequest(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    protected void doPost( HttpServletRequest request, HttpServletResponse response )
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doPost( HttpServletRequest request, HttpServletResponse response ) {
+        try {
+            processRequest(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -53,7 +59,7 @@ public class Invoker extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Command pattern and servlet created by Kasper and modified by De Resterende";
     }
 
 }

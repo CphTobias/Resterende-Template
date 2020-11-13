@@ -2,8 +2,6 @@ package api.factories;
 
 public class TemplateFactory {
 
-    //isValid()
-
     private String example;
 
     public Boolean isValid(){

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Redirect extends ICommand {
     @Override
-    protected String execute(HttpServletRequest request, HttpServletResponse response) throws WebException {
+    protected String execute(HttpServletRequest request, HttpServletResponse response) {
 
         String destination = request.getParameter("destination");
 
