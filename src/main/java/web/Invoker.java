@@ -1,5 +1,6 @@
 package web;
 
+import api.Template;
 import exceptions.*;
 
 import javax.servlet.ServletException;
@@ -24,6 +25,7 @@ public class Invoker extends HttpServlet {
 
             ICommand action = ICommand.from( request );
             String view = action.execute( request, response );
+            request.setAttribute("version", Template.getVERSION());
             if (view.equals("index")){
                 request.getRequestDispatcher(view + ".jsp").forward(request, response);
             } else {

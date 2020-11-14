@@ -14,8 +14,6 @@ R
 -src/main/java/api/facades/TemplateFacade.java,9/e/9e54984f52a2ffbc22231ce8b2c17ec03d6a506b
 a
 1src/main/java/infrastructure/DBSetup/Migrate.java,3/8/38cbd7ed07ae2d4322c58129a210924802a2ffd3
-e
-5src/main/java/infrastructure/database/DBTemplate.java,7/5/751d104e884c88b97ee18b659324b780330d133b
 Y
 )src/main/java/exceptions/DBException.java,0/c/0c63e0d684841235552021ceb345e1db3fd2c0e9
 `
@@ -28,8 +26,6 @@ I
 src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
 b
 2src/main/java/infrastructure/DBSetup/Database.java,a/9/a968c00546aae7d4ebed03578c808edc30694c0c
-Z
-*src/main/java/exceptions/WebException.java,f/5/f5db93316f7887d9f9912686cac457fc434ef295
 N
 src/main/java/web/Invoker.java,e/7/e7ff5b3d681ddb2c5ca7c7771642813e6f5ec014
 O
@@ -38,3 +34,23 @@ X
 (src/main/java/web/commands/Redirect.java,2/8/28860fb7d143db793aa13a8063cc857f6f60af3a
 O
 src/main/java/web/ICommand.java,f/9/f96882e3edc159d2bd657b74b13038697e2f41a7
+a
+1src/main/java/infrastructure/dbsetup/Migrate.java,8/0/806db43847321f6edd5dace69ab3afeab0986f32
+[
++src/main/webapp/WEB-INF/includes/footer.jsp,9/7/971570857fb512bddad5dd7a129f962b084a83a3
+[
++src/main/webapp/WEB-INF/includes/header.jsp,c/3/c33efa379e148bb47c5f40d9965f40e49d3e2217
+[
++src/main/webapp/WEB-INF/includes/navbar.jsp,1/9/19a4bcd5205033c265aeed6fded66bf2169db92b
+\
+,src/main/java/domain/TemplateRepository.java,b/c/bc789127f517ad1972c1cae9187c00953d556a6b
+U
+%src/main/webapp/WEB-INF/errorpage.jsp,b/e/bef1eda2f7e2d81dd55b166ba6d1110ce8fa083c
+b
+2src/main/java/exceptions/NoSuchTemplateExists.java,a/2/a2b76bdf92f0400241fcbec10d393a28c2158dff
+a
+1src/main/java/exceptions/ValidationException.java,f/4/f4178d974d9380eab27c9897253cf904fbe14838
+o
+?src/main/java/infrastructure/database/DBTemplateRepository.java,2/5/25d771db79cff84aaf0e4b2e7399746237c319ff
+b
+2src/main/java/infrastructure/dbsetup/Database.java,3/d/3d2715b96f1cb6d7c12fd093a13561e97c94672f

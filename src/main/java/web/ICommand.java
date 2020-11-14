@@ -15,9 +15,9 @@ import java.util.HashMap;
 public abstract class ICommand {
 
     /*
-      @author Kasper
+     * @author Kasper
      * Modified by: De Resterende
-     */
+    */
 
     /**
      * Whenever you want to make a post or get from a .jsp site, give an input called (name=target).
@@ -50,6 +50,7 @@ public abstract class ICommand {
         return new Template(TemplateFacade.getInstance());
     }
 
+    //used by every command, and called by the invoker.
     protected abstract String execute(HttpServletRequest request, HttpServletResponse response);
 
 }
