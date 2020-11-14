@@ -23,9 +23,9 @@ public class TemplateFacade {
     }
 
     public static TemplateFacade getInstance() {
-        Database db = new Database();
-        TemplateRepository templateRepository = new DBTemplateRepository(db);
         if (instance == null) {
+            Database db = new Database();
+            TemplateRepository templateRepository = new DBTemplateRepository(db);
             instance = new TemplateFacade(templateRepository);
         }
         return instance;
