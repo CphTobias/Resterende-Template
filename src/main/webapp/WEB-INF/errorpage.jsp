@@ -14,10 +14,17 @@
 
 <main role="main" class="container flex-shrink-0">
     <!-- Called if an error happens in the system -->
-    <h1>Error</h1>
-    <c:if test="${requestScope.error != null}">
-        <h4>${requestScope.error}</h4>
-    </c:if>
+    <div class="alert alert-danger border-danger">
+        <h1>Error</h1>
+        <c:if test="${requestScope.error != null}">
+            <h4>${requestScope.error}</h4>
+        </c:if>
+    </div>
+    <form action="Main" method="get">
+        <input type="hidden" name="target" value="redirect">
+        <input type="hidden" name="destination" value="index">
+        <button type="submit" class="btn btn-secondary">Back to the main menu</button>
+    </form>
 </main>
 
 <!-- Include footer -->
