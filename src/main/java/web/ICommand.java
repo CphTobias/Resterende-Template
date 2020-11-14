@@ -3,7 +3,6 @@ package web;
 
 import api.Template;
 import api.facades.TemplateFacade;
-import exceptions.WebException;
 import web.commands.Redirect;
 import web.commands.UnknownCommand;
 

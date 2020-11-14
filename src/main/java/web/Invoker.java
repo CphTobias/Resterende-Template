@@ -1,7 +1,5 @@
 package web;
 
-import exceptions.WebException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
