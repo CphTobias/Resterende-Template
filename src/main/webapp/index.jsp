@@ -1,8 +1,16 @@
+<%@ page import="api.Template" %>
+<%@ page import="infrastructure.dbsetup.Database" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!-- Include header -->
 <jsp:include page="WEB-INF/includes/header.jsp" flush="true"/>
+
+<%
+    if(request.getServletContext().getAttribute("version") == null){
+        request.getServletContext().setAttribute("version", Template.getVERSION());
+    }
+%>
 
 <!-- Insert title -->
 <title>Template: Home</title>

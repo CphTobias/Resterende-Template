@@ -1,6 +1,6 @@
 <footer class="footer mt-auto py-4 fixed-bottom bg-dark">
     <div class="container">
-        <span class="text-white">Resterende-Template (Version ${requestScope.version})</span>
+        <span class="text-white">Resterende-Template (Version ${applicationScope.version})</span>
     </div>
 </footer>
 
