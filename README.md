@@ -1,3 +1,6 @@
+# Interface version
+If you wish to use interfaces, there is an interface template on the second branch "Interface-Template"
+
 # Template for java webproject
 
 This is the starter template for De-Resterende's web project structure.
