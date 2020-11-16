@@ -6,7 +6,8 @@ public class Template {
 
     /**
      * Generates the api, and is created in the ICommand class
-     * Set your programs current version here
+     * 1. Set your programs current version here
+     * 2. Implement your Facades in here
      */
 
     private static final String VERSION = "0.1";

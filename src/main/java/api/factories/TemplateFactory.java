@@ -4,6 +4,7 @@ public class TemplateFactory {
 
     /**
      * This is used for validation when creating something
+     * Call isValid after using the set methods
      */
 
     private String example;
