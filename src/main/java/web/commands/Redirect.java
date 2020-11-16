@@ -12,6 +12,8 @@ public class Redirect extends ICommand {
         /**
          * Used as a getter to redirect to certain places on the website
          * You can either just redirect or maybe select from the database.
+         *
+         * When creating a new site, you can add them in here so you can always redirect to it
          */
 
         String destination = request.getParameter("destination");
