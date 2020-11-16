@@ -7,6 +7,7 @@
 <jsp:include page="WEB-INF/includes/header.jsp" flush="true"/>
 
 <%
+    //Set the programs version
     if(request.getServletContext().getAttribute("version") == null){
         request.getServletContext().setAttribute("version", Template.getVERSION());
     }
@@ -20,6 +21,7 @@
 <!-- Include navbar -->
 <jsp:include page="WEB-INF/includes/navbar.jsp" flush="true"/>
 
+<!-- Main container -->
 <main role="main" class="container flex-shrink-0">
     <h1>Resterende Template!</h1>
     <a href="Main?target=test&destination=test">To test</a>

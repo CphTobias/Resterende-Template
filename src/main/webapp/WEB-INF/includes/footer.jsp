@@ -1,8 +1,15 @@
+
+<!-- Footer -->
 <footer class="footer mt-auto py-4 fixed-bottom bg-dark">
     <div class="container">
         <span class="text-white">Resterende-Template (Version ${applicationScope.version})</span>
     </div>
 </footer>
+
+<!-- Javascript:
+     1. Jquery
+     2. Popper
+     3. Bootstrap -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
