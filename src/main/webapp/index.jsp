@@ -7,6 +7,8 @@
 <jsp:include page="WEB-INF/includes/header.jsp" flush="true"/>
 
 <%
+    //If you end up making a lot of logic in here, maybe think about making an implementation class.
+
     //Set the programs version
     if(request.getServletContext().getAttribute("version") == null){
         request.getServletContext().setAttribute("version", Template.getVERSION());
