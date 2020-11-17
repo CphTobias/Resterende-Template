@@ -48,8 +48,6 @@ U
 %src/main/webapp/WEB-INF/errorpage.jsp,b/e/bef1eda2f7e2d81dd55b166ba6d1110ce8fa083c
 b
 2src/main/java/exceptions/NoSuchTemplateExists.java,a/2/a2b76bdf92f0400241fcbec10d393a28c2158dff
-a
-1src/main/java/exceptions/ValidationException.java,f/4/f4178d974d9380eab27c9897253cf904fbe14838
 o
 ?src/main/java/infrastructure/database/DBTemplateRepository.java,2/5/25d771db79cff84aaf0e4b2e7399746237c319ff
 b

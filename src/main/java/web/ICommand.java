@@ -17,7 +17,7 @@ public abstract class ICommand {
     /*
      * @author Kasper
      * Modified by: De Resterende
-    */
+     */
 
     /**
      * Whenever you want to make a post or get from a .jsp site, give an input called (name=target).
@@ -31,12 +31,12 @@ public abstract class ICommand {
         commands.put("redirect", new Redirect());
     }
 
-    static ICommand from(HttpServletRequest request ) {
-        String targetName = request.getParameter( "target" );
-        if ( commands == null ) {
+    static ICommand from(HttpServletRequest request) {
+        String targetName = request.getParameter("target");
+        if (commands == null) {
             initCommands();
         }
-        return commands.getOrDefault(targetName, new UnknownCommand() );   // unknowncommand er default.
+        return commands.getOrDefault(targetName, new UnknownCommand());   // unknowncommand er default.
     }
 
     //Creates the api, with this you will be able to just call api.get().YOURMETHOD()
@@ -46,7 +46,7 @@ public abstract class ICommand {
         api = createTemplate();
     }
 
-    private static Template createTemplate(){
+    private static Template createTemplate() {
         return new Template(TemplateFacade.getInstance());
     }
 

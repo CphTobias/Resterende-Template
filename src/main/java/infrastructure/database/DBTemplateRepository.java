@@ -6,6 +6,7 @@ import domain.TemplateRepository;
 import exceptions.NoSuchTemplateExists;
 import infrastructure.dbsetup.Database;
 
+import java.sql.PreparedStatement;
 import java.util.List;
 
 public class DBTemplateRepository implements TemplateRepository {
