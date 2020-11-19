@@ -1,13 +1,0 @@
-
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8åşÕğÛ.
-Z	java:S106/"9Replace this use of System.out or System.err by a logger.(Ò¿éğüÿÿÿÿ8¿İ¨îÛ.
-k	java:S116"ORename this field "USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î¿©…8¯ £îÛ.
-j	java:S116
-"NRename this field "URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÅÁ¶8¯ £îÛ.
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡¾ ıÿÿÿÿ8¯ £îÛ.
-b
-java:S1128"@Remove this unused import 'org.apache.ibatis.jdbc.ScriptRunner'.(÷ÑºÒüÿÿÿÿ8Ùå¿ğÛ.
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘üƒê8åşÕğÛ.
-i
-java:S2095)"GUse try-with-resources or close this "Statement" in a "finally" clause.(¬ÿÂìøÿÿÿÿ8¿İ¨îÛ.
-Z	java:S1063"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8¿İ¨îÛ.

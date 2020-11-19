@@ -1,5 +1,5 @@
-<%@ page import="api.Template" %>
-<%@ page import="infrastructure.dbsetup.Database" %>
+<%@ page import="com.yourcompany.api.Template" %>
+<%@ page import="com.yourcompany.infrastructure.dbsetup.Database" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
